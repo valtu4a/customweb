@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("jquery", "1");//
+</script>
+<script type="text/javascript" src="vk_audio_get.js"></script>
+<div class="playlist">
+	<ul></ul>
+</div>
+</body>
+</html>
