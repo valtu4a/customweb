@@ -1,0 +1,9 @@
+$(function() {
+var apiURL='https://api.vk.com/method/audio.get?access_token=YOUR_TOKEN&callback=?';
+$.getJSON(apiURL,function(data){
+	var i=0;
+	$.each( data.response, function(i, audio) {
+		$('.playlist').append('<li>'+audio.title+'<audio  title="'+audio.title+'" curr="0" cnt="'+ audio.length +'" controls class="s'+i+'"src="'+audio.url+'">'+audio.title+'</audio></li>');
+		});
+ });
+});
